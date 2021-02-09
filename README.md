@@ -1,7 +1,7 @@
 ![project cover](https://raw.githubusercontent.com/caiomarte/go/main/.github/project-cover.png)
 
 ### Gopheround: Learning Go by Example
-This repository provides free problem-based resources for learning Go through analyzing and understanding Go code.
+This repository provides free problem-based resources to learn Go.
 
 ---
 
