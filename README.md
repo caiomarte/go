@@ -1,4 +1,4 @@
-![project cover](https://raw.githubusercontent.com/caiomarte/go/main/.github/project-cover.png)
+![project cover](./images/project-cover.png)
 
 # Gopheround: Learning Go by Example
 This repository provides free problem-based resources to learn Go.
