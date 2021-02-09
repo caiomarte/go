@@ -31,8 +31,9 @@ Each post will follow the same structure:
 
 ### Table of contents
 
-#### 1. [Day 0: Hello, World]() <details>
+#### 1. [Day 0: Hello, World]()
 
+<details>
  <summary>What to expect?</summary>
  
  ###### Theory:
@@ -52,6 +53,7 @@ Each post will follow the same structure:
  * [Key takeways]()
  * [Full commented solution]()
  * [Knowledge compination `.pdf`]()
+
 </details>
   
 ---
