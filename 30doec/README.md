@@ -49,7 +49,7 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * Printing outpum to `Stdout` using `fmt.Print`, `fmt.Printf()`, and `fmt.Println()`
  
  ###### Tips:
- * Go convention to name variables
+ * Variable namimg convetion in Go
  
  ###### Resources:
  * [Key takeways]()
