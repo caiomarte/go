@@ -33,7 +33,7 @@ Each post will follow the same structure:
 
 #### [Day 0: Hello, World]()
 
-**Challenge:** Output to the console both the statement `Hello, World.` and an input read from `Stdin`.
+Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 
 <details>
  <summary>What to expect?</summary>
