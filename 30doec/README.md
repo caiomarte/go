@@ -27,16 +27,9 @@ Each post will follow the same structure:
 
 * **Full commented solution** - The full solution with all necessary comments for you to review.
 
-Please, let me hear from you. Your feedback is essential.
-
 ---
 
-### What's next?
-[Day 0: Hello, World]()
-
----
-
-### Series
+### Table of Contents
 
 #### 1. Day 0: Hello, World
 * ###### Theory:
@@ -53,3 +46,12 @@ Please, let me hear from you. Your feedback is essential.
   * Key takeways
   * Full commented solution
   * Knowledge compination `.pdf`
+  
+---
+
+### What's next?
+[Day 0: Hello, World]()
+
+--- 
+
+Please, let me hear from you. Your feedback is essential.
