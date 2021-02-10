@@ -52,8 +52,8 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * Variable namimg convetion in Go
  
  ###### Resources:
- * [Key takeaways]()
- * [Full commented solution]()
+ * Key takeaways
+ * Full commented solution
  * [Knowledge compination `.pdf`]()
 
 </details>
