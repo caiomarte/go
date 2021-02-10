@@ -1,4 +1,4 @@
-![series cover](../../images/30doec/30doec-cover.png)
+![series cover](../images/30doec/30doec-cover.png)
 # 30 Days of (Explained) Code
 
 ### Hello, refactored chimps!
