@@ -1,5 +1,5 @@
 ![series cover](../../../images/30doec/d0/d0-cover.png)
-# 30 Days of (Explained) Code
+# 0 / 30 Days of (Explained) Code: Hello World
 
 ### Hello, refactored chimps!
 
@@ -11,7 +11,7 @@ If you’re looking for a problem-based approach for beginners, this is the plac
 
 ---
 
-### Day 0: Hello, World.
+### Day 0: Hello, World
 Today we are going to code the genesis of all algorithms ever written in any language: the classic “Hello, World”.
 
 But don’t mistake yourself! For a simple algorithm as such, we are going to cover:
