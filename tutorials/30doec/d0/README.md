@@ -1,4 +1,4 @@
-![series cover](../../../images/30doec/d0/d0-cover.png)
+![series cover](../../../images/30doec/d0/cover-d0.png)
 # 0 / 30 Days of (Explained) Code: Hello World
 
 ### Hello, refactored chimps!
@@ -29,7 +29,7 @@ To complete this challenge, we need to:
 2. Print `Hello, World.` to the console on a single line
 3. Print the value from step 1 on a second line
 
-![day 0 problem](../../../images/30doec/d0/d0-p.png)
+![day 0 problem](../../../images/30doec/d0/d0-challenge.png)
 
 For the full problem description, go to [HackerRank’s Day 0: Hello, World](https://www.hackerrank.com/challenges/30-hello-world/problem).
 
