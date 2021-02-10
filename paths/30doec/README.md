@@ -63,6 +63,4 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 ### What's next?
 [Day 0: Hello, World]()
 
---- 
-
 Please, let me hear from you. Your feedback is essential.
