@@ -61,4 +61,30 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 ---
 
 ### What's next?
+
 [Day 0: Hello, World]()
+
+Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
+
+<details>
+ <summary>What to expect?</summary>
+ 
+ ###### Theory:
+ * Go packages and code structure
+ * The `fmt`, `os`, and `bufio` packages from Go's standard library
+ * 4 ways to declare variables in Go
+  
+ ###### Practice:
+ * Reading input from `Stdin` using `bufio.NewScanner(os.Stdin).Scan()`
+ * Saving input from `Stdin` using `bufio.NewScanner(os.Stdin).Text()`
+ * Printing outpum to `Stdout` using `fmt.Print`, `fmt.Printf()`, and `fmt.Println()`
+ 
+ ###### Tips:
+ * Variable namimg convetion in Go
+ 
+ ###### Resources:
+ * Key takeaways
+ * Full commented solution
+ * [Knowledge compination `.pdf`]()
+
+</details>
