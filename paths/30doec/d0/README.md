@@ -192,7 +192,7 @@ That completes the challenge, the full code as follows:
 
 ### Full commented solution
 
-![full commented solution](../../../images/30doec/d0/d0-fcs.png)
+![full commented solution](../../../images/30doec/d0/d0-cs.png)
 
 ---
 
