@@ -38,7 +38,7 @@ The full solution with all necessary comments for you to review.
 
 ### Table of contents
 
-#### [Day 0: Hello, World]()
+#### [Day 0: Hello, World](./d0/)
 
 Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 
@@ -59,9 +59,9 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * Variable namimg convetion in Go
  
  ###### Resources:
- * Key takeaways
- * Full commented solution
- * [Knowledge compination `.pdf`]()
+ * [Key takeaways](./d0#key-takeaways)
+ * [Full commented solution](./d0/main.go)
+ * [Knowledge compination `.pdf`](../../resources/30doec/d0-c.pdf)
 
 </details>
   
@@ -69,7 +69,7 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 
 ### What's next?
 
-[Day 0: Hello, World]()
+[Day 0: Hello, World](./d0/)
 
 Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 
@@ -90,8 +90,8 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * Variable namimg convetion in Go
  
  ###### Resources:
- * Key takeaways
- * Full commented solution
- * [Knowledge compination `.pdf`]()
+ * [Key takeaways](./d0#key-takeaways)
+ * [Full commented solution](./d0/main.go)
+ * [Knowledge compination `.pdf`](../../resources/30doec/d0-c.pdf)
 
 </details>
