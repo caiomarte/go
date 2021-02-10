@@ -17,15 +17,22 @@ We are going to solve 30 problems ranging from easy to medium level, one problem
 
 Each post will follow the same structure:
 
-* **What is the problem?** - A short explanation of what’s required to complete the challenge. It will describe what the problem is and what input and output we should expect.
+#### What is the problem?
+A short explanation of what’s required to complete the challenge. It will describe what the problem is and what input and output we should expect.
 
-* **What do we need to know about Go?** - What are the Go concepts we need to know in order to solve the problem? This is our opportunity to discuss and learn the Go basics.
+#### What do we need to know about Go?
+What are the Go concepts we need to know in order to solve the problem? This is our opportunity to discuss and learn the Go basics.
 
-* **Step-by-step coding explained** - Now that we have the theory, it’s time to code. As we solve the problem, I’ll explain each line or block of code based on the concepts we saw previously. In this section, I will prioritize flow of thinking over flow of compilation. That means code may appear in different order in the explanation versus the algorithm. But don’t worry: I’ll place a number before each line indicating its position in the final structure.
+#### Step-by-step coding explained
+Now that we have the theory, it’s time to code. As we solve the problem, I’ll explain each line or block of code based on the concepts we saw previously.
 
-* **Key Takeaways** - A summary of what’s been seen for you to save for later.
+In this section, I will prioritize flow of thinking over flow of compilation. That means code may appear in different order in the explanation versus the algorithm. But don’t worry: I’ll place a number before each line indicating its position in the final structure.
 
-* **Full commented solution** - The full solution with all necessary comments for you to review.
+#### Key Takeaways
+A summary of what’s been seen for you to save for later.
+
+#### Full commented solution
+The full solution with all necessary comments for you to review.
 
 ---
 
