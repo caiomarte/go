@@ -1,4 +1,4 @@
-![project cover](./images/cover-cover.png)
+![project cover](./images/cover-p.png)
 
 # Gopheround: Learning Go by Example
 This repository provides free problem-based resources to learn Go.
