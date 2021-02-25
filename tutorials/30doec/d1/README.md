@@ -401,7 +401,7 @@ Day 2: Operators is still cooking...
 
 ### What's before?
 
-[Day 0: Hello, World](./d0/)
+[Day 0: Hello, World](../d0/)
 
 Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
 
@@ -422,8 +422,8 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * Variable namimg convetion in Go
  
  ###### Resources:
- * [Key takeaways](./d0#key-takeaways)
- * [Full commented solution](./d0/main.go)
- * [Knowledge compination `.pdf`](../../resources/30doec/d0-c.pdf)
+ * [Key takeaways](../d0#key-takeaways)
+ * [Full commented solution](../d0/main.go)
+ * [Knowledge compination `.pdf`](../../../resources/30doec/d0-c.pdf)
 
 </details>
