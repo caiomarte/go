@@ -47,7 +47,7 @@ For the full problem description, go to [HackerRank’s Day 1: Data Types](https
 Go offers 15 [numeric types](https://golang.org/ref/spec#Numeric_types). Each type presents a defined bit-size and either supports negative values or not.
 
 ##### Integers and natural numbers
-Go differentiates integers that can assume negative values from thos which cannot. In mathematical words, Go treats integers and natural numbers differently.
+Go differentiates integers that can assume negative values from those which cannot. In mathematical words, Go treats integers and natural numbers differently.
 
 Integers are all positive and negative counting numbers, including 0: {..., -2, -1, 0, 1, 2, ...}. In Go, these are called _signed_ integers and can be 8, 16, 32, or 64 bits in size. Go also provides a signed integer which is either 32 or 64 bits in size, depending on the architecture of the underlying system that is running the program. These types are `int8` (also referenced as `byte`), `int16`, `int32`, `int64`, and `int`, respectively.
 
@@ -70,7 +70,7 @@ Complex numbers are also fully represented by their own data types. These data t
 ![complex numbers](../../../images/30doec/d1/d1-t3.png)
 
 ##### The text type
-Differently from many modern programming languages, te only text type available in Go is `string`. That's because Go treats strings as read-only sequences of bytes, and a character is represented by a `byte` (`uint8`) or `rune` (`int32`).
+Differently from many modern programming languages, the only text type available in Go is `string`. That's because Go treats strings as read-only sequences of bytes, and a character is represented by a `byte` (`uint8`) or `rune` (`int32`).
 
 There are many built-in functions to manipulate a `string`. We already saw some of them in the [previous post](../d0/): `Print()`, `Printf()`, and `Println` from the `fmt` package, for output; and `Text()` from the `bufio` scanner, for capturing input.
 
@@ -122,7 +122,7 @@ Our `for` loop will execute the initialization before the first iteration, and t
 
 ![for default example](../../../images/30doec/d1/d1-t11.png)
 
-In Go, the initialization and postAction are [_optiona_](https://tour.golang.org/flowcontrol/2). We can omit them by leaving a black space before the divisors (`;` or `{`). This is particularly useful when the variable in our condition has already been initialized before our loop _and_ will be modified inside our loop. Refactoring the example above:
+In Go, the initialization and postAction are [_optional_](https://tour.golang.org/flowcontrol/2). We can omit them by leaving a black space before the divisors (`;` or `{`). This is particularly useful when the variable in our condition has already been initialized before our loop _and_ will be modified inside our loop. Refactoring the example above:
 
 ![for hidden example](../../../images/30doec/d1/d1-t12.png)
 
@@ -141,7 +141,7 @@ To create an infinite loop, we omit everything and just declare the `for` keywor
 Conditionals are constructs we use to make decisions inside our code. We already saw in the last example the `if` and `else` construct, but we'll take a step back to discuss the `if` alone.
 
 ##### If, else, and else if
-[`if` statements](https://golang.org/ref/spec#If_statements) are pretty simple: they have a single condition which is evaluated once. If the condition is `true`, our program runs the instructions inside of the [`if`](https://tour.golang.org/flowcontrol/5) block of code. Otherwise, it skipes that block, jumping to the next command.
+[`if` statements](https://golang.org/ref/spec#If_statements) are pretty simple: they have a single condition which is evaluated once. If the condition is `true`, our program runs the instructions inside of the [`if`](https://tour.golang.org/flowcontrol/5) block of code. Otherwise, it skips that block, jumping to the next command.
 
 ![if example](../../../images/30doec/d1/d1-t15.png)
 
@@ -170,7 +170,7 @@ In a [`switch case`](https://tour.golang.org/flowcontrol/9), we have a `switch` 
 
 If you've worked with another language before, it's worth saying Go's `switch case` is a bit different from the usual. First, it only runs the first `case` block that meets the condition. That means we don't need to add a `break` statement inside of each `case` block; Go nativelly skips all the following conditions and moves on to the end of the `switch`. Second, values evaluated by `switch case` conditions don't need to be integers nor constants.
 
-For those with no previous knowledge, just know that you can use `switch case` to evaluate both constants and variables of any data type. Your program will evaluate the conditions top-down and only execute the block of code that first meets your condition. skipping all the rest.
+For those with no previous knowledge, just know that you can use `switch case` to evaluate both constants and variables of any data type. Your program will evaluate the conditions top-down and only execute the block of code that first meets your condition, skipping all the rest.
 
 #### Converting strings to numeric data types
 To complete the challenge, we'll need functionality from the `strconv` package.
@@ -182,7 +182,7 @@ If you remember from the beginning of this conversation, Go deals with two types
 
 There are 3 methods for converting strings to integers: `ParseUint()`, `ParseInt()`, and `Atoi()`.
 
-[`ParseUint()`](https://golang.org/pkg/strconv/#ParseUint) is used to convert from `string` to `uint`. It receives 3 arguments: the string to be converted, a number representing the base or rdix of the desired integer, and a number to represent the desired integer's size in bits - either 8, 16, 32, or 64.
+[`ParseUint()`](https://golang.org/pkg/strconv/#ParseUint) is used to convert from `string` to `uint`. It receives 3 arguments: the `string` to be converted, a number representing the base or radix of the desired integer, and a number to represent the desired integer's size in bits - either 8, 16, 32, or 64.
 
 ![parseuint statement](../../../images/30doec/d1/d1-t20.png)
 
