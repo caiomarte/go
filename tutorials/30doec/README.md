@@ -64,6 +64,38 @@ Outputting `Hello, World.` and an input retrieved from `Stdin` to the console.
  * [Knowledge compination `.pdf`](../../resources/30doec/d0-c.pdf)
 
 </details>
+
+#### [Day 1: Data Types](./d1/)
+
+Reading multiple inputs, executing basic operations, and outputing the results.
+
+<details>
+ <summary>What to expect?</summary>
+ 
+ ###### Theory:
+ * Numeric and text data types supported by Go
+ * Go's `+` to add numbers and concatenate text
+ * the only loop available in Go, and its different forms
+ * all conditional structures, and how Go differs from other languages
+ * how to convert a text into a number using Go's `strconv` package
+  
+ ###### Practice:
+ * Reading multiple inputs using a `for` loop
+ * Evaluating `switch case` conditions
+ * Converting `string` to `uint` with `strconv.ParseUint()`
+ * Converting `string` to `float` with `strconv.ParseFloat()`
+
+ ###### Tips:
+ * Using blank identifiers to handle unused values
+ * Formatting `fmt.Printf()` output with verbs and `\n`
+ * Outputting limited decimal places using `%f`
+ 
+ ###### Resources:
+ * [Key takeaways](./d1#key-takeaways)
+ * [Full commented solution](./d1/main.go)
+ * [Knowledge compination `.pdf`](../../resources/30doec/d1-c.pdf)
+
+</details>
   
 ---
 
