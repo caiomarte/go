@@ -12,7 +12,7 @@ If you’re looking for a problem-based approach for beginners, this is the plac
 ---
 
 ### Day 1: Data Types
-Today we'll see how to receive multiple inputs, execute some basci data operations, and output the results. For that purpose, we are going to cover:
+Today we'll see how to receive multiple inputs, execute some basic data operations, and output the results. For that purpose, we are going to cover:
 
 * all numeric and text data types supported by Go (spoiler: there are many)
 * the Go's `+` operator to sum numbers and concatenate text
