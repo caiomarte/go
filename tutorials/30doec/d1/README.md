@@ -91,7 +91,7 @@ When working with numerical types, the sum operator performs an addition of the 
 ##### Adding strings
 When working with strings, the sum operator performs a concatenation of the two operands placed before and after the `+`. A concatenation is similar to an addition, in which two strings are assembled to become one. We saw an example in the [previous post](../d0/), while playing with the different `fmt` [functions](https://play.golang.org/p/S12Sr_yKOy1) to output data.
 
-![concaenating strings](../../../images/30doec/d1/d1-t6.png)
+![concatenating strings](../../../images/30doec/d1/d1-t6.png)
 
 #### Looping
 Despite using it in our [previous post](../d0/), we didn't learn about looping constructs yet. Now it's time.
