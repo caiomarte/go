@@ -257,7 +257,7 @@ The order in which data will come corresponds to the iteration in which data wil
 
 In the first iteration, when `i = 0`, we'll scan an integer which we'll need to store in a variable. Since we'll summ the input to the pre-initialized `var i uint64`, it's safe to assume our variable must be of type `uint64` too. We also need it to be accessible in the whole `func main()` scope, since we'll read it from the _inside_ of the `for` loop and output it from the _outside_ of the `for` loop.
 
-Notice that I'm using the name convention to name our variable wich will store the integer value as `iV`.
+Notice that I'm using the name convention to name our variable which will store the integer value as `iV`.
 
 ![uint64 variable](../../../images/30doec/d1/d1-s6.png)
 
