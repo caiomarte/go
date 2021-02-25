@@ -203,11 +203,13 @@ The `Atoi()` method also returns an `error`, but only receives one parameter: th
 ##### String to float
 To convert from `string` to `float`, we use the `ParseFloat()` function.
 
-[`ParseFloat()`](https://golang.org/pkg/strconv/#ParseFloat) only requires two arguments: the `string`to be converted and a number that indicates desired bit-size - either 32 or 64. It then returns then returns the converted float and an `error`.
+[`ParseFloat()`](https://golang.org/pkg/strconv/#ParseFloat) only requires two arguments: the `string`to be converted and a number that indicates desired bit-size - either 32 or 64. It then returns the converted float and an `error`.
 
 ![parsefloat complete](../../../images/30doec/d1/d1-t24.png)
 
-One curious thing is, `ParseFloat()` always results in a `float64` number, even when we specify 32 as the bit-size argument. The only difference is, when we pass bit-size as 32, we can convert the resulting `float64` number to `float32` without changing its value. In other words, the converted float will always be of type `float64`. If you want `float32`, you need to pass 32 as the bit-size argument and then _convert_ the output from `float64` to `float32` before storing it.
+One curious thing is, `ParseFloat()` always results in a `float64` number, even when we specify 32 as the bit-size argument. The only difference is, when we pass bit-size as 32, we can convert the resulting `float64` number to `float32` without changing its value.
+
+In other words, the converted float will always be of type `float64`. If you want `float32`, you need to pass 32 as the bit-size argument and then _convert_ the output from `float64` to `float32` before storing it.
 
 Don't worry if you didn't get this last part, we won't use it. Just remember: if there's an `error`, make sure you declared the converted float variable as of type `float64`.
 
@@ -239,13 +241,13 @@ Now that we understand the rules of the game, let's play with it.
 #### Assign 1 integer input to a variable
 The first step is to read input from `Stdin`.
 
-Hopefully, you remember from the [previous post](../d0/) that `bufio`'s `Scan()` needs a loop to iterate for as long as there is input available. In other words, `Scan()` only read one input at a time. This thie, we need to read 3 different inputs, therefore we'll need to iterate 3 times.
+Hopefully, you remember from the [previous post](../d0/) that `bufio`'s `Scan()` needs a loop to iterate for as long as there is input available. In other words, `Scan()` only read one input at a time. This time, we need to read 3 different inputs, and therefore iterate 3 times.
 
 To do so, we'll initialize a variable in a `for` statement; present a condition to break out of the loop after 3 iterations; and increment or decrement that variable after each iteration, based on the strategy we adopt. In my case, I'm using the default `for` structure to iterate from 0 to 2 (`i = 0`, `i = 1`, and `i = 2`), but feel free to use any other format or path to get to the same result.
 
 ![for statement](../../../images/30doec/d1/d1-s3.png)
 
-We narrowed the input reading loop, time to actually call `Scan()`. Remember: HackerRank instantiated `bufio.NewScanner(os.Stdin)` by the name `scanner`.
+We narrowed the input reading loop, time to actually call `Scan()`. Remember: HackerRank already created `scanner` with the necessary `bufio.NewScanner(os.Stdin)`.
 
 ![scan call](../../../images/30doec/d1/d1-s4.png)
 
@@ -255,13 +257,15 @@ The order in which data will come corresponds to the iteration in which data wil
 
 ![switch case statement](../../../images/30doec/d1/d1-s5.png)
 
-In the first iteration, when `i = 0`, we'll scan an integer which we'll need to store in a variable. Since we'll summ the input to the pre-initialized `var i uint64`, it's safe to assume our variable must be of type `uint64` too. We also need it to be accessible in the whole `func main()` scope, since we'll read it from the _inside_ of the `for` loop and output it from the _outside_ of the `for` loop.
+In the first iteration, when `i = 0`, we'll scan an integer which we'll need to store in a variable. Since we'll sum the input to the pre-initialized `var i uint64`, it's safe to assume our variable must be of type `uint64` too.
 
-Notice that I'm using the name convention to name our variable which will store the integer value as `iV`.
+We also need it to be accessible in the whole `func main()` scope, since we'll read it from the _inside_ of the `for` loop and output it from the _outside_ of the `for` loop.
+
+Notice that I'm using the name convention to name the variable in which we'll store the integer value as `iV`.
 
 ![uint64 variable](../../../images/30doec/d1/d1-s6.png)
 
-Back to the `for` loop, we can now store the input from the first iteration (`i = 0`) in our `iV`variable. To do so, we need `bufio`'s `Text()`.
+Back to the `for` loop, we can now store the input from the first iteration (`i = 0`) in our `iV` variable. To do so, we need `bufio`'s `Text()`.
 
 ![first input raw](../../../images/30doec/d1/d1-s7.png)
 
@@ -275,7 +279,7 @@ Blank identifier `_` is a special feature to avoid errors generated by unused va
 
 Warning: ignoring errors is a terrible practice for real-life problems. Also, the blank identifier must be used with due diligence. I cannot reinforce these enough.
 
-Reading the first input (`case 0`) goes as follows: `iV` receives an integer from `strconv.ParseUint()` wich converts the `scanner.Text()` input from `string` to `uint64` using base 10.
+Reading the first input (`case 0`) goes as follows: `iV` receives an integer from `strconv.ParseUint()` which converts the `scanner.Text()` input from `string` to `uint64` using base 10.
 
 ![first input converted](../../../images/30doec/d1/d1-s8.png)
 
@@ -330,7 +334,7 @@ If we run this program, the resulting output will look like this:
 
 ![inline output](../../../images/30doec/d1/d1-s17.png)
 
-There are two problems with this output: first, all values are inline, but we need to print each value in a single line; second, HackerRank expects a float with only one decimal place, `8.0`. We'll add some formatting to fix these.
+There are two problems with this output. First, all values are inline, but we need to print each value in its own line. Second, HackerRank expects a float with only one decimal place, `8.0`. We'll add some formatting to fix these.
 
 To print one value in each line, we'll use the newline symbol `\n` to replace all blank spaces between verbs.
 
@@ -353,9 +357,9 @@ That completes the challenge, the full code as follows:
 ### Key Takeaways
 
 * Go has 15 numeric types in total.
-* Integers are represented are called signed integers, and vary from 8 to 64 bits in size - `int8`, `int16`, `int32`, and `int64`.
+* Integers are called signed integers, and vary from 8 to 64 bits in size - `int8`, `int16`, `int32`, and `int64`.
 * Natural numbers, the strictly positive integers, are called unsigned integers, and vary from 8 to 64 bits - `int8`, `int16`, `int32`, and `int64`.
-* You can declare architecture-dependent integers that assume either 32 ou 64 bits in size to match the underlying architecture - `int` and `uint`.
+* You can declare architecture-dependent integers that assume either 32 ou 64 bits in size to match the underlying system - `int` and `uint`.
 * Float numbers are either 32 or 64 bits, with explicit size declaration - `float32` and `float64`.
 * Complex numbers are pairs of `float32` or `float64` representing real and imaginary parts - `complex64` and `complex128`.
 * Go has only 1 text type to represent strings of any size, including 1 character-long strings - `string`.
