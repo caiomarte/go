@@ -236,3 +236,21 @@ Reading multiple inputs, executing basic operations, and outputing the results.
  * [Knowledge compination `.pdf`](../../../resources/30doec/d1-c.pdf)
 
 </details>
+
+---
+
+### What's before?
+
+[30 Days of (Explained) Code](../)
+
+Introduction to the 30 Days of (Explained) Code series
+
+<details>
+ <summary>What to expect?</summary>
+ 
+ * What is the goal, target audience, and description
+ * How is it going to work
+ * Table of contents listing all available posts
+ * A summary for each post in the list
+  
+</details>
