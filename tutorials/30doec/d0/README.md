@@ -248,9 +248,10 @@ Introduction to the 30 Days of (Explained) Code series
 <details>
  <summary>What to expect?</summary>
  
- * What is the goal, target audience, and description
- * How is it going to work
- * Table of contents listing all available posts
- * A summary for each post in the list
-  
+ An overview of the series, describing:
+ * What is the goal and target audience
+ * How it is structured
+ * What are the contents available
+ * What are these contents about
+
 </details>
