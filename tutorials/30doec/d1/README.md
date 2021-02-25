@@ -330,7 +330,7 @@ If we run this program, the resulting output will look like this:
 
 ![inline output](../../../images/30doec/d1/d1-s17.png)
 
-There are two problems with this output: first, all values are inline, but we need to print each value in a single line; second, HackerRank expects a float with only one decimal place, `8.0`. We'll add some formating to fix these.
+There are two problems with this output: first, all values are inline, but we need to print each value in a single line; second, HackerRank expects a float with only one decimal place, `8.0`. We'll add some formatting to fix these.
 
 To print one value in each line, we'll use the newline symbol `\n` to replace all blank spaces between verbs.
 
