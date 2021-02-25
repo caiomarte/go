@@ -132,9 +132,9 @@ We can also skip the initialization and post action completely. Therefore, we do
 
 The last way to use `for` is by creating an [infinite loop](https://tour.golang.org/flowcontrol/4). I know, right? Everyone who took a coding class somewhere was probably warned about the dangers of infinite loops. Still, many times we create them accidentally. Go gives one step ahead by allowing us to create them _on purpose_. It means the condition is _optional_ too.
 
-To create an infinite loop, we omit everything and just declare the `for` keyword and its scope. But it's important to remember that, despite the name, infinite loops should _not_ run forever. In order to `break` the loop, we still nedd a condition inside our `for` block.
+To create an infinite loop, we omit everything and just declare the `for` keyword and its scope. But it's important to remember that, despite the name, infinite loops should _not_ run forever. In order to `break` the loop, we still need a condition inside our `for` block.
 
-![for infinit example](../../../images/30doec/d1/d1-t14.png)
+![for infinite example](../../../images/30doec/d1/d1-t14.png)
 
 #### Conditionals
 
