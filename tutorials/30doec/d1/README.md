@@ -1,4 +1,4 @@
-![series cover](../../../images/30doec/d1!/cover-d1.png)
+![series cover](../../../images/30doec/d1/cover-d1.png)
 # 1 / 30 Days of (Explained) Code: Data Types
 
 ### Hello, refactored chimps!
