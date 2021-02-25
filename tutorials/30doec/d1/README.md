@@ -261,7 +261,7 @@ Notice that I'm using the name convention to name our variable which will store 
 
 ![uint64 variable](../../../images/30doec/d1/d1-s6.png)
 
-Back to the `for` loop, we can now store the input from the first interation (`i = 0`) in our `iV`variable. To do so, we need `bufio`'s `Text()`.
+Back to the `for` loop, we can now store the input from the first iteration (`i = 0`) in our `iV`variable. To do so, we need `bufio`'s `Text()`.
 
 ![first input raw](../../../images/30doec/d1/d1-s7.png)
 
