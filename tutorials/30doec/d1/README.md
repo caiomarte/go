@@ -20,7 +20,7 @@ Today we'll see how to receive multiple inputs, execute some basci data operatio
 * all conditional structures, and how Go differs from other languages
 * how to convert a text into a number using Go's `strconv` package
 
-We're also using all the stuff we learned in the previous post. In case you missed it, check out the [Day 0: Hello, World](../d0/README.md).
+We're also using all the stuff we learned in the previous post. In case you missed it, check out the [Day 0: Hello, World](../d0/).
 
 ---
 
@@ -72,7 +72,7 @@ Complex numbers are also fully represented by their own data types. These data t
 ##### The text type
 Differently from many modern programming languages, te only text type available in Go is `string`. That's because Go treats strings as read-only sequences of bytes, and a character is represented by a `byte` (`uint8`) or `rune` (`int32`).
 
-There are many built-in functions to manipulate a `string`. We already saw some of them in the [previous post](../d0/README.md): `Print()`, `Printf()`, and `Println` from the `fmt` package, for output; and `Text()` from the `bufio` scanner, for capturing input.
+There are many built-in functions to manipulate a `string`. We already saw some of them in the [previous post](../d0/): `Print()`, `Printf()`, and `Println` from the `fmt` package, for output; and `Text()` from the `bufio` scanner, for capturing input.
 
 To initialize a `string`, we place its value between backticks ``My string value`` or double quotes `"My string value"`. I'll be using double quotes by default, but feel free to use either format.
 
@@ -89,12 +89,12 @@ When working with numerical types, the sum operator performs an addition of the 
 ![adding numbers](../../../images/30doec/d1/d1-t5.png)
 
 ##### Adding strings
-When working with strings, the sum operator performs a concatenation of the two operands placed before and after the `+`. A concatenation is similar to an addition, in which two strings are assembled to become one. We saw an example in the [previous post](../d0/README.md), while playing with the different `fmt` [functions](https://play.golang.org/p/S12Sr_yKOy1) to output data.
+When working with strings, the sum operator performs a concatenation of the two operands placed before and after the `+`. A concatenation is similar to an addition, in which two strings are assembled to become one. We saw an example in the [previous post](../d0/), while playing with the different `fmt` [functions](https://play.golang.org/p/S12Sr_yKOy1) to output data.
 
 ![concaenating strings](../../../images/30doec/d1/d1-t6.png)
 
 #### Looping
-Despite using it in our [previous post](../d0/README.md), we didn't learn about looping constructs yet. Now it's time.
+Despite using it in our [previous post](../d0/), we didn't learn about looping constructs yet. Now it's time.
 
 Differently from most languages, Go has only one looping construct: [`for`](https://golang.org/ref/spec#For_statements). But it can be used in 4 ways, so there's no need for more constructs.
 
@@ -186,7 +186,7 @@ There are 3 methods for converting strings to integers: `ParseUint()`, `ParseInt
 
 ![parseuint statement](../../../images/30doec/d1/d1-t20.png)
 
-The `ParseUint()` function returns an `uint` value based on the specified radix and with the provided bit size, along with an `error` value. Therefore, when receiving an output from `ParseUint()`, we need to provide two variables: one for the converted `uint` and another for the `error`. We do that using the multi-value short declaration we saw in the [previous post](../d0/README.md).
+The `ParseUint()` function returns an `uint` value based on the specified radix and with the provided bit size, along with an `error` value. Therefore, when receiving an output from `ParseUint()`, we need to provide two variables: one for the converted `uint` and another for the `error`. We do that using the multi-value short declaration we saw in the [previous post](../d0/).
 
 ![parseuint return](../../../images/30doec/d1/d1-t21.png)
 
@@ -222,7 +222,7 @@ First and foremost, let's take a look at what has already been provided to us.
 
 ![pre-defined code](../../../images/30doec/d1/d1-s0.png)
 
-HackerRank already declared the package we are working on, `package main`. It also imported all the packages we will _have_ to use to solve this challenge: `strconv` to make conversions, and `fmt`, `os`, and `bufio` to work with input and output - we saw the last 3 in the [previous post](../d0/README.md).
+HackerRank already declared the package we are working on, `package main`. It also imported all the packages we will _have_ to use to solve this challenge: `strconv` to make conversions, and `fmt`, `os`, and `bufio` to work with input and output - we saw the last 3 in the [previous post](../d0/).
 
 ![pre-defined packages](../../../images/30doec/d1/d1-s1.png)
 
@@ -239,7 +239,7 @@ Now that we understand the rules of the game, let's play with it.
 #### Assing 1 integer input to a variable
 The first step is to read input from `Stdin`.
 
-Hopefully, you remember from the [previous post](../d0/README.md) that `bufio`'s `Scan()` needs a loop to iterate for as long as there is input available. In other words, `Scan()` only read one input at a time. This thie, we need to read 3 different inputs, therefore we'll need to iterate 3 times.
+Hopefully, you remember from the [previous post](../d0/) that `bufio`'s `Scan()` needs a loop to iterate for as long as there is input available. In other words, `Scan()` only read one input at a time. This thie, we need to read 3 different inputs, therefore we'll need to iterate 3 times.
 
 To do so, we'll initialize a variable in a `for` statement; present a condition to break out of the loop after 3 iterations; and increment or decrement that variable after each iteration, based on the strategy we adopt. In my case, I'm using the default `for` structure to iterate from 0 to 2 (`i = 0`, `i = 1`, and `i = 2`), but feel free to use any other format or path to get to the same result.
 
@@ -304,7 +304,7 @@ That finishes our `for` loop.
 Now that we correctly scanned and stored all 3 inputs, let's execute the necessary operations and output the result.
 
 #### Output the sum of `i` and the integer from step 1
-In the [previous post](../d0/README.md), we saw different `fmt` methods to output data. Today, I'm going to use `Printf()`, but always feel free to walk your own way.
+In the [previous post](../d0/), we saw different `fmt` methods to output data. Today, I'm going to use `Printf()`, but always feel free to walk your own way.
 
 Remember to manipulate and output data _after_ the `for` loop so all variables have some value to operate.
 
