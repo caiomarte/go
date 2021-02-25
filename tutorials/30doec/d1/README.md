@@ -151,7 +151,7 @@ Ok, the `if` statement block allows us to execute code in case a condition holds
 
 We could evaluate different conditions using several `if` statements, but Go provides and `else if` construct to make multiple evaluation more productive. Why is it more productive? Because `else if` allows us to state a new condition that, like an `else` block, will only be evaluated in case the previous `if` condition is `false`.
 
-Too confusing? Let's go over it step by step. First, there's an `if` condition. When the `if` condition is `true`, our program executes the commands inside of the `if` block and skips all the other nested `else if` and `else` blocks. When the `if` condition is `false`, our program looks for the first nested `else if` or `else` block available. In chase there is an `else if`, our program efaluates its condition and determines whether to execute or skip its block of code. This will happen until our program hits a `true` condition or the `else` code.
+Too confusing? Let's go over it step by step. First, there's an `if` condition. When the `if` condition is `true`, our program executes the commands inside of the `if` block and skips all the other nested `else if` and `else` blocks. When the `if` condition is `false`, our program looks for the first nested `else if` or `else` block available. In chase there is an `else if`, our program evaluates its condition and determines whether to execute or skip its block of code. This will happen until our program hits a `true` condition or the `else` code.
 
 ![else if example](../../../images/30doec/d1/d1-t17.png)
 
