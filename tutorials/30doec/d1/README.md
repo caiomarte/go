@@ -49,7 +49,7 @@ Go offers 15 [numeric types](https://golang.org/ref/spec#Numeric_types). Each ty
 ##### Integers and natural numbers
 Go differentiates integers that can assume negative values from thos which cannot. In mathematical words, Go treats integers and natural numbers differently.
 
-Integers are all positive and negative couting numbers, including 0: {..., -2, -1, 0, 1, 2, ...}. In Go, these are called _signed_ integers and can be 8, 16, 32, or 64 bits in size. Go also provides a signed integer which is either 32 or 64 bits in size, depending on the architecture of the underlying system that is running the program. These types are `int8` (also referenced as `byte`), `int16`, `int32`, `int64`, and `int`, respectively.
+Integers are all positive and negative counting numbers, including 0: {..., -2, -1, 0, 1, 2, ...}. In Go, these are called _signed_ integers and can be 8, 16, 32, or 64 bits in size. Go also provides a signed integer which is either 32 or 64 bits in size, depending on the architecture of the underlying system that is running the program. These types are `int8` (also referenced as `byte`), `int16`, `int32`, `int64`, and `int`, respectively.
 
 ![signed integers](../../../images/30doec/d1/d1-t0.png)
 
